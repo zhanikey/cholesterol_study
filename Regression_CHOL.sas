@@ -2,12 +2,12 @@
 
 /* Demographic Variables and Sample Weights */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\DEMO_J.xpt";
+libname XP xport "...\DEMO_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.DEMO_J;
   set xp.DEMO_J;
@@ -15,12 +15,12 @@ run;
 
 /* Dietary Interview - Individual Foods, First Day */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\DR1IFF_J.xpt";
+libname XP xport "...\DR1IFF_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.Dr1iff_j;
   set xp.Dr1iff_j;
@@ -28,12 +28,12 @@ run;
 
 /* Dietary Interview - Total Nutrient Intakes, First Day */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\DR1TOT_J.xpt";
+libname XP xport "...\DR1TOT_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.Dr1tot_j;
   set xp.Dr1tot_j;
@@ -41,12 +41,12 @@ run;
 
 /* Cholesterol - Total */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\TCHOL_J.xpt";
+libname XP xport "...\TCHOL_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.TCHOL_J;
   set xp.TCHOL_J;
@@ -54,12 +54,12 @@ run;
 
 /* Blood Pressure & Cholesterol */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\BPQ_J.xpt";
+libname XP xport "...\BPQ_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.BPQ_J;
   set xp.BPQ_J;
@@ -67,12 +67,12 @@ run;
 
 /* Blood Pressure */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\BPX_J.xpt";
+libname XP xport "...\BPX_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.BPX_J;
   set xp.BPX_J;
@@ -80,12 +80,12 @@ run;
 
 /* Body Measures */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\BMX_J.xpt";
+libname XP xport "...\BMX_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.BMX_J;
   set xp.BMX_J;
@@ -93,12 +93,12 @@ run;
 
 /* Smoking - Cigarette Use */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\SMQ_J.xpt";
+libname XP xport "...\SMQ_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.SMQ_J;
   set xp.SMQ_J;
@@ -106,12 +106,12 @@ run;
 
 /* Cholesterol - High - Density Lipoprotein (HDL) */
 
-libname XP xport "C:\Users\zhani\Documents\NHANES_database_temp\HDL_J.xpt";
+libname XP xport "...\HDL_J.xpt";
 
 proc copy in=xp out=work;
 run;
 
-libname nh "C:\Users\zhani\Documents\NHANES_database";
+libname nh "...\NHANES_database";
 
 data nh.HDL_J;
   set xp.HDL_J;
@@ -154,7 +154,7 @@ run;
 /* Using the univariate procedure to generate descriptive statistics  */
 
 
-LIBNAME NH "C:\Users\zhani\Documents\NHANES_database";
+LIBNAME NH "...\NHANES_database";
 OPTIONS NODATE NOCENTER;
 options ls=72;
 
@@ -207,7 +207,7 @@ run;
 
 /* Selective statistics */
 
-LIBNAME NH "C:\Users\zhani\Documents\NHANES_database";
+LIBNAME NH "...\NHANES_database";
 OPTIONS NODATE NOCENTER;
 options ls=72;
 
@@ -284,7 +284,7 @@ run;
  
 /* LINEAR REGRESSION */
 
-LIBNAME NH "C:\Users\zhani\Documents\NHANES_database";
+LIBNAME NH "...\NHANES_database";
 OPTIONS NODATE NOCENTER;
 options ls=72;
 proc format;
